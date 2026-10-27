@@ -6,9 +6,11 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/25 18:31:20 by username         #+#    #+#              */
-/*   Updated: 2026/10/25 19:37:19 by username        ###   ########.fr        */
+/*   Updated: 2026/10/27 11:39:05 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 #include "libft.h"
 
@@ -17,19 +19,23 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	n;
 	char	*res;
 
+	n = 0;
+	if (!s)
+		return (NULL);
 	if (start > ft_strlen(s))
-		n = 0;
-	else
-		n = ft_strlen(s) - start;
-	if (len < n)
-		n = len;
-	res = malloc(n + 1);
+		return (NULL);
+	if ((ft_strlen(s) - start) < len)
+		len = ft_strlen(s) - start;
+	res = malloc((len + 1) * sizeof(char));
 	if (res == NULL)
 		return (NULL);
-	if (n == 0)
-		res[0] = '\0';
-	else
-		ft_strlcpy(res, s + start, n + 1);
+	while (n < len)
+	{
+		res[n] = s[start];
+		start++;
+		n++;
+	}
+	res[n] = '\0';
 	return (res);
 }
 
@@ -39,10 +45,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 // {
 // 	char	*r;
 
-// 	r = ft_substr("bonjour", 3, 2);
+// 	r = ft_substr("", 1, 1);
 // 	printf("normal    : [%s]\n", r);
 // 	free(r);
-// 	r = ft_substr("bonjour", 3, 100);
+// 	r = ft_substr("42", 0, 2);
 // 	printf("len long  : [%s]\n", r);
 // 	free(r);
 // 	r = ft_substr("bonjour", 10, 2);
