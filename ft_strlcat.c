@@ -6,11 +6,11 @@
 /*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 10:48:47 by username          #+#    #+#             */
-/*   Updated: 2026/10/22 15:49:43 by jquer            ###   ########.fr       */
+/*   Updated: 2026/10/27 08:48:15 by jquer            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlcat(char *dest, const char *src, size_t destsize)
 {
