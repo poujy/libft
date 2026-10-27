@@ -6,7 +6,7 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/25 20:42:28 by username         #+#    #+#              */
-/*   Updated: 2026/10/25 21:11:49 by username        ###   ########.fr        */
+/*   Updated: 2026/10/27 11:54:16 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	d;
 
 	d = 0;
+	if (!s1 || !set)
+		return (NULL);
 	end = ft_strlen(s1);
 	while (s1[d] != '\0' && ft_strchr(set, s1[d]) != NULL)
 		d += 1;
