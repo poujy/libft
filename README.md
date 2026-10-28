@@ -100,6 +100,7 @@ typedef struct s_list
 
 - `man` des fonctions de la libc (`man 3 strlcpy`, etc.)
 - [Documentation C de cppreference](https://en.cppreference.com/w/c)
+- [Tutoriels C de geeksforgeeks](https://www.geeksforgeeks.org/search/?gq=c)
 - Norme 42 (Norminette)
 
 ### Utilisation de l'IA
