@@ -4,9 +4,9 @@
 
 ## Description
 
-**Libft** est le premier projet du cursus 42 : la création de sa propre bibliothèque C (`libft.a`) qui reprend des fonctions de la libc, ajoute des fonctions utilitaires, et sert de base à tous les projets suivants.
+**Libft** est le premier projet du cursus 42 : la création notre propre bibliothèque C (`libft.a`) qui reprend des fonctions de la libc, ajoute des fonctions utilitaires, et sert de base à tous nos futurs projets.
 
-Le but est de comprendre en profondeur le fonctionnement de ces fonctions (gestion mémoire, chaînes de caractères, pointeurs, listes chaînées) en les recodant sans utiliser les originales.
+Le but est de comprendre le fonctionnement de ces fonctions (gestion mémoire, chaînes de caractères, pointeurs, listes chaînées) en les recodant sans utiliser les originales.
 
 ## Instructions
 
@@ -21,7 +21,7 @@ make re       # fclean puis recompile
 
 ### Utilisation dans un projet
 
-1. Inclure le header dans ton code :
+1. Inclure le header dans le code :
 
 ```c
 #include "libft.h"
@@ -69,7 +69,7 @@ int main(void)
 | `ft_split` | Découpe une chaîne selon un séparateur |
 | `ft_itoa` | Convertit un entier en chaîne |
 | `ft_strmapi` | Applique une fonction à chaque caractère (nouvelle chaîne) |
-| `ft_striteri` | Applique une fonction à chaque caractère (en place) |
+| `ft_striteri` | Applique une fonction à chaque caractère |
 | `ft_putchar_fd` `ft_putstr_fd` `ft_putendl_fd` `ft_putnbr_fd` | Écriture sur un descripteur de fichier |
 
 ### Partie 3 : listes chaînées
@@ -105,4 +105,4 @@ typedef struct s_list
 
 ### Utilisation de l'IA
 
-L'IA a été utilisée pour comprendre certains concepts (par exemple le double pointeur dans `ft_lstadd_front`) et pour rédiger ce README. Le code a été écrit et testé personnellement.
+L'IA a été utilisée pour comprendre certains concepts et pour aider a mettre en forme ce README. Le code a été écrit et testé personnellement.
