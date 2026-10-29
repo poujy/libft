@@ -6,11 +6,9 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/25 18:31:20 by username         #+#    #+#              */
-/*   Updated: 2026/10/28 14:36:21 by username        ###   ########.fr        */
+/*   Updated: 2026/10/29 08:44:38 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 #include "libft.h"
 
@@ -23,7 +21,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	if (start >= ft_strlen(s))
-		return (NULL);
+		len = 0;
 	if ((ft_strlen(s) - start) < len)
 		len = ft_strlen(s) - start;
 	res = malloc((len + 1) * sizeof(char));
