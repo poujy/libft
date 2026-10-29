@@ -6,7 +6,7 @@
 /*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 10:06:30 by username          #+#    #+#             */
-/*   Updated: 2026/10/29 08:45:03 by jquer            ###   ########.fr       */
+/*   Updated: 2026/10/29 11:18:40 by jquer            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	while (lst)
 	{
 		tmp = f(lst->content);
+		new_node = ft_lstnew(tmp);
 		new_node = ft_lstnew(tmp);
 		if (new_node == NULL)
 		{
