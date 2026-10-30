@@ -19,3 +19,15 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	new->next = *lst;
 	*lst = new;
 }
+#ifdef LIBFT_MAIN_FT_LSTADD_FRONT
+int	main(void)
+{
+	t_list *list = ft_lstnew("back");
+		t_list *node = ft_lstnew("front");
+		ft_lstadd_front(&list, node);
+		printf("ft_lstadd_front = [%s]\n", (char *)list->content);
+		free(node);
+		free(list);
+	return (0);
+}
+#endif

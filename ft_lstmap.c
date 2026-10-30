@@ -36,3 +36,25 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
+#ifdef LIBFT_MAIN_FT_LSTMAP
+static void	*test_map_list(void *content)
+{
+	return (ft_strdup((char *)content));
+}
+
+static void	test_del(void *content)
+{
+	free(content);
+}
+
+int	main(void)
+{
+	t_list *list = ft_lstnew("libft");
+		t_list *mapped = ft_lstmap(list, test_map_list, test_del);
+		printf("ft_lstmap = [%s]\n", (char *)mapped->content);
+		free(mapped->content);
+		free(mapped);
+		free(list);
+	return (0);
+}
+#endif

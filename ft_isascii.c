@@ -20,3 +20,10 @@ int	ft_isascii(int c)
 	}
 	return (0);
 }
+#ifdef LIBFT_MAIN_FT_ISASCII
+int	main(void)
+{
+	printf("ft_isascii(127) = %d\n", ft_isascii(127));
+	return (0);
+}
+#endif

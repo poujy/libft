@@ -24,3 +24,10 @@ char	*ft_strchr(const char *str, int ch)
 		return ((char *) str);
 	return (NULL);
 }
+#ifdef LIBFT_MAIN_FT_STRCHR
+int	main(void)
+{
+	printf("ft_strchr = %s\n", ft_strchr("libft", 'b'));
+	return (0);
+}
+#endif

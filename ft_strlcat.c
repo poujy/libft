@@ -35,3 +35,11 @@ size_t	ft_strlcat(char *dest, const char *src, size_t destsize)
 	dest[dest_len + i] = '\0';
 	return (dest_len + src_len);
 }
+#ifdef LIBFT_MAIN_FT_STRLCAT
+int	main(void)
+{
+	char dst[10] = "lib";
+		printf("ft_strlcat = %zu\n", ft_strlcat(dst, "ft", sizeof(dst)));
+	return (0);
+}
+#endif

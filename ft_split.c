@@ -82,3 +82,14 @@ char	**ft_split(char const *s, char c)
 	res[i] = 0;
 	return (res);
 }
+#ifdef LIBFT_MAIN_FT_SPLIT
+int	main(void)
+{
+	char **parts = ft_split("lib ft", ' ');
+		printf("ft_split = [%s] [%s]\n", parts[0], parts[1]);
+		free(parts[0]);
+		free(parts[1]);
+		free(parts);
+	return (0);
+}
+#endif

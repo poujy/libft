@@ -18,3 +18,10 @@ void	ft_putstr_fd(char *s, int fd)
 		return ;
 	write(fd, s, ft_strlen(s));
 }
+#ifdef LIBFT_MAIN_FT_PUTSTR_FD
+int	main(void)
+{
+	ft_putstr_fd("libft\n", 1);
+	return (0);
+}
+#endif

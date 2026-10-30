@@ -24,3 +24,12 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (len);
 }
+#ifdef LIBFT_MAIN_FT_LSTSIZE
+int	main(void)
+{
+	t_list *list = ft_lstnew("libft");
+		printf("ft_lstsize = %d\n", ft_lstsize(list));
+		free(list);
+	return (0);
+}
+#endif

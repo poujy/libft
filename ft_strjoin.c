@@ -49,3 +49,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 // 	free(r);
 // 	return (0);
 // }
+#ifdef LIBFT_MAIN_FT_STRJOIN
+int	main(void)
+{
+	char *result = ft_strjoin("lib", "ft");
+		printf("ft_strjoin = [%s]\n", result);
+		free(result);
+	return (0);
+}
+#endif

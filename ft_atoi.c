@@ -36,3 +36,10 @@ int	ft_atoi(const char *nptr)
 	}
 	return ((int)(result * sign));
 }
+#ifdef LIBFT_MAIN_FT_ATOI
+int	main(void)
+{
+	printf("ft_atoi = %d\n", ft_atoi("-42"));
+	return (0);
+}
+#endif

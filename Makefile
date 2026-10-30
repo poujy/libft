@@ -21,4 +21,8 @@ fclean: clean
 
 re: fclean all
 
+test-%:
+	@macro=$$(printf '%s' "$*" | tr '[:lower:]' '[:upper:]'); \
+	$(CC) $(CFLAGS) -D"LIBFT_MAIN_$$macro" $(SRCS) -o /tmp/libft_$* && /tmp/libft_$*
+
 .PHONY: all clean fclean re

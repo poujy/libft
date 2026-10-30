@@ -26,3 +26,10 @@ void	*ft_memchr(const void *ptr, int c, size_t count)
 	}
 	return (NULL);
 }
+#ifdef LIBFT_MAIN_FT_MEMCHR
+int	main(void)
+{
+	printf("ft_memchr = %s\n", (char *)ft_memchr("libft", 'f', 5));
+	return (0);
+}
+#endif

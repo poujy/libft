@@ -23,3 +23,15 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	}
 	ft_lstlast(*lst)->next = new;
 }
+#ifdef LIBFT_MAIN_FT_LSTADD_BACK
+int	main(void)
+{
+	t_list *list = ft_lstnew("front");
+		t_list *node = ft_lstnew("back");
+		ft_lstadd_back(&list, node);
+		printf("ft_lstadd_back = [%s]\n", (char *)ft_lstlast(list)->content);
+		free(node);
+		free(list);
+	return (0);
+}
+#endif

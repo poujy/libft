@@ -22,3 +22,18 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
+#ifdef LIBFT_MAIN_FT_LSTITER
+static void	test_iter(void *content)
+{
+	printf("[%s]", (char *)content);
+}
+
+int	main(void)
+{
+	t_list *list = ft_lstnew("libft");
+		ft_lstiter(list, test_iter);
+		ft_putchar_fd('\n', 1);
+		free(list);
+	return (0);
+}
+#endif

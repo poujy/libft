@@ -45,3 +45,10 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 //     printf("vrai ft : %d\n", strncmp(str4, str4, 2));
 //     return (0);
 // }
+#ifdef LIBFT_MAIN_FT_STRNCMP
+int	main(void)
+{
+	printf("ft_strncmp = %d\n", ft_strncmp("abc", "abd", 3));
+	return (0);
+}
+#endif

@@ -18,3 +18,10 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
+#ifdef LIBFT_MAIN_FT_ISPRINT
+int	main(void)
+{
+	printf("ft_isprint('A') = %d\n", ft_isprint('A'));
+	return (0);
+}
+#endif
