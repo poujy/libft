@@ -6,7 +6,7 @@
 /*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 10:48:47 by username          #+#    #+#             */
-/*   Updated: 2026/10/27 08:48:15 by jquer            ###   ########.fr       */
+/*   Updated: 2026/10/30 12:41:40 by jquer            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,11 @@ size_t	ft_strlcat(char *dest, const char *src, size_t destsize)
 	dest[dest_len + i] = '\0';
 	return (dest_len + src_len);
 }
-int	main(void)
-{
-	char dst[10] = "lib";
-		printf("ft_strlcat = %zu\n", ft_strlcat(dst, "ft", sizeof(dst)));
-	return (0);
-}
+
+// int	main(void)
+// {
+// 	char	dst[10] = "lib";
+
+// 	printf("ft_strlcat = %zu\n", ft_strlcat(dst, "ft", sizeof(dst)));
+// 	return (0);
+// }

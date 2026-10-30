@@ -6,7 +6,7 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/20 16:19:48 by username         #+#    #+#              */
-/*   Updated: 2026/10/20 22:11:20 by username        ###   ########.fr        */
+/*   Updated: 2026/10/30 09:28:50 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,12 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-int	main(void)
-{
-	char buffer[6] = "abcde";
-		ft_memset(buffer, 'x', 3);
-		printf("ft_memset = [%s]\n", buffer);
-	return (0);
-}
+
+// int	main(void)
+// {
+// 	char	buffer[6] = "abcde";
+
+// 	ft_memset(buffer, 'x', 3);
+// 	printf("ft_memset = [%s]\n", buffer);
+// 	return (0);
+// }

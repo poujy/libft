@@ -6,7 +6,7 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/25 19:50:06 by username         #+#    #+#              */
-/*   Updated: 2026/10/26 09:12:01 by username        ###   ########.fr        */
+/*   Updated: 2026/10/30 12:41:28 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,30 +29,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (res);
 }
 
-// #include <stdio.h>
-
 // int	main(void)
 // {
-// 	char	*r;
+// 	char	*result = ft_strjoin("lib", "ft");
 
-// 	r = ft_strjoin("bon", "jour");
-// 	printf("normal  : [%s]\n", r);
-// 	free(r);
-// 	r = ft_strjoin("", "abc");
-// 	printf("s1 vide : [%s]\n", r);
-// 	free(r);
-// 	r = ft_strjoin("abc", "");
-// 	printf("s2 vide : [%s]\n", r);
-// 	free(r);
-// 	r = ft_strjoin("", "");
-// 	printf("2 vides : [%s]\n", r);
-// 	free(r);
+// 	printf("ft_strjoin = [%s]\n", result);
+// 	free(result);
 // 	return (0);
 // }
-int	main(void)
-{
-	char *result = ft_strjoin("lib", "ft");
-		printf("ft_strjoin = [%s]\n", result);
-		free(result);
-	return (0);
-}

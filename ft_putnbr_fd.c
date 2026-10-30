@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/26 13:54:19 by username          #+#    #+#             */
-/*   Updated: 2026/10/26 14:01:14 by jquer            ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_putnbr_fd.c                                    :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/26 13:54:19 by username         #+#    #+#              */
+/*   Updated: 2026/10/30 09:29:14 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,10 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n / 10, fd);
 	ft_putchar_fd((char)(n % 10 + '0'), fd);
 }
-int	main(void)
-{
-	ft_putnbr_fd(-42, 1);
-		ft_putchar_fd('\n', 1);
-	return (0);
-}
+
+// int	main(void)
+// {
+// 	ft_putnbr_fd(-42, 1);
+// 	ft_putchar_fd('\n', 1);
+// 	return (0);
+// }

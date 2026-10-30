@@ -6,7 +6,7 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/20 22:21:48 by username         #+#    #+#              */
-/*   Updated: 2026/10/20 22:43:25 by username        ###   ########.fr        */
+/*   Updated: 2026/10/30 09:16:52 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,11 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-int	main(void)
-{
-	char buffer[6] = "abcde";
-		ft_bzero(buffer, 3);
-		printf("ft_bzero = [%s]\n", buffer);
-	return (0);
-}
+
+// int	main(void)
+// {
+// 	char buffer[6] = "abcde";
+// 		ft_bzero(buffer, 3);
+// 		printf("ft_bzero = [%s]\n", buffer);
+// 	return (0);
+// }

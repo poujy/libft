@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/27 09:36:20 by username          #+#    #+#             */
-/*   Updated: 2026/10/27 12:42:29 by jquer            ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_lstlast.c                                      :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/27 09:36:20 by username         #+#    #+#              */
+/*   Updated: 2026/10/30 09:24:53 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,38 +21,11 @@ t_list	*ft_lstlast(t_list *lst)
 	return (lst);
 }
 
-// #include <stdio.h>
-
 // int	main(void)
 // {
-// 	t_list	*head;
-// 	t_list	*second;
-// 	t_list	*third;
-// 	t_list	*last;
+// 	t_list	*list = ft_lstnew("libft");
 
-// 	head = ft_lstnew("first");
-// 	second = ft_lstnew("second");
-// 	third = ft_lstnew("third");
-// 	head->next = second;
-// 	second->next = third;
-// 	last = ft_lstlast(head);
-// 	if (!last)
-// 	{
-// 		printf("ft_lstlast returned NULL\n");
-// 		return (1);
-// 	}
-// 	printf("last content = %s\n", (char *) last->content);
-// 	if (ft_lstlast(NULL) != NULL)
-// 	{
-// 		printf("ft_lstlast(NULL) should return NULL\n");
-// 		return (1);
-// 	}
+// 	printf("ft_lstlast = [%s]\n", (char *) ft_lstlast(list)->content);
+// 	free(list);
 // 	return (0);
 // }
-int	main(void)
-{
-	t_list *list = ft_lstnew("libft");
-		printf("ft_lstlast = [%s]\n", (char *)ft_lstlast(list)->content);
-		free(list);
-	return (0);
-}

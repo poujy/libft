@@ -6,7 +6,7 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/22 17:58:17 by username         #+#    #+#              */
-/*   Updated: 2026/10/25 18:19:23 by username        ###   ########.fr        */
+/*   Updated: 2026/10/30 09:22:55 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,12 @@ char	*ft_strdup(const char *s)
 	dup[i] = '\0';
 	return (dup);
 }
-int	main(void)
-{
-	char *copy = ft_strdup("libft");
-		printf("ft_strdup = [%s]\n", copy);
-		free(copy);
-	return (0);
-}
+
+// int	main(void)
+// {
+// 	char	*copy = ft_strdup("libft");
+
+// 	printf("ft_strdup = [%s]\n", copy);
+// 	free(copy);
+// 	return (0);
+// }

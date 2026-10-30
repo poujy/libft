@@ -6,7 +6,7 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/20 16:19:33 by username         #+#    #+#              */
-/*   Updated: 2026/10/20 22:43:28 by username        ###   ########.fr        */
+/*   Updated: 2026/10/30 09:17:08 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,9 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-int	main(void)
-{
-	printf("ft_isalnum('7') = %d\n", ft_isalnum('7'));
-	return (0);
-}
+
+// int	main(void)
+// {
+// 	printf("ft_isalnum('7') = %d\n", ft_isalnum('7'));
+// 	return (0);
+// }
