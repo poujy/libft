@@ -59,7 +59,6 @@ char	*ft_itoa(int n)
 	}
 	return (fill_str(str, nb, len));
 }
-#ifdef LIBFT_MAIN_FT_ITOA
 int	main(void)
 {
 	char *result = ft_itoa(-42);
@@ -67,4 +66,3 @@ int	main(void)
 		free(result);
 	return (0);
 }
-#endif

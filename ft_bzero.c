@@ -23,7 +23,6 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-#ifdef LIBFT_MAIN_FT_BZERO
 int	main(void)
 {
 	char buffer[6] = "abcde";
@@ -31,4 +30,3 @@ int	main(void)
 		printf("ft_bzero = [%s]\n", buffer);
 	return (0);
 }
-#endif

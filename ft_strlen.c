@@ -21,10 +21,8 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
-#ifdef LIBFT_MAIN_FT_STRLEN
 int	main(void)
 {
 	printf("ft_strlen(\"libft\") = %zu\n", ft_strlen("libft"));
 	return (0);
 }
-#endif

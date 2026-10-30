@@ -56,7 +56,6 @@ void	*ft_calloc(size_t nmemb, size_t size)
 // 	printf("overflow: %s\n", p ? "pointeur (KO)" : "NULL (OK)");
 // 	return (0);
 // }
-#ifdef LIBFT_MAIN_FT_CALLOC
 int	main(void)
 {
 	int *values = ft_calloc(3, sizeof(*values));
@@ -64,4 +63,3 @@ int	main(void)
 		free(values);
 	return (0);
 }
-#endif

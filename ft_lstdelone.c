@@ -20,7 +20,6 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 		free(lst);
 	}
 }
-#ifdef LIBFT_MAIN_FT_LSTDELONE
 static void	test_del(void *content)
 {
 	free(content);
@@ -33,4 +32,3 @@ int	main(void)
 		printf("ft_lstdelone = OK\n");
 	return (0);
 }
-#endif

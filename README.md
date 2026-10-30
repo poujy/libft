@@ -19,9 +19,8 @@ make fclean   # supprime les .o et libft.a
 make re       # fclean puis recompile
 ```
 
-Chaque fichier `ft_*.c` contient également un `main` de démonstration
-conditionnel. Il ne participe pas à la bibliothèque par défaut. Pour compiler
-et lancer celui d'une fonction :
+Chaque fichier `ft_*.c` contient un `main` de démonstration directement
+exécutable. Pour compiler et lancer celui d'une fonction :
 
 ```bash
 make test-ft_strlen

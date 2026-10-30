@@ -57,7 +57,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 // 	free(r);
 // 	return (0);
 // }
-#ifdef LIBFT_MAIN_FT_STRTRIM
 int	main(void)
 {
 	char *result = ft_strtrim("--libft--", "-");
@@ -65,4 +64,3 @@ int	main(void)
 		free(result);
 	return (0);
 }
-#endif

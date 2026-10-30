@@ -29,7 +29,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	res[i] = 0;
 	return (res);
 }
-#ifdef LIBFT_MAIN_FT_STRMAPI
 static char	test_map(unsigned int index, char c)
 {
 	(void)index;
@@ -43,4 +42,3 @@ int	main(void)
 		free(result);
 	return (0);
 }
-#endif

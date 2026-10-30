@@ -24,7 +24,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-#ifdef LIBFT_MAIN_FT_MEMCPY
 int	main(void)
 {
 	char dst[6];
@@ -32,4 +31,3 @@ int	main(void)
 		printf("ft_memcpy = [%s]\n", dst);
 	return (0);
 }
-#endif

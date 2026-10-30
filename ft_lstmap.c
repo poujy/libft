@@ -36,7 +36,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
-#ifdef LIBFT_MAIN_FT_LSTMAP
 static void	*test_map_list(void *content)
 {
 	return (ft_strdup((char *)content));
@@ -57,4 +56,3 @@ int	main(void)
 		free(list);
 	return (0);
 }
-#endif

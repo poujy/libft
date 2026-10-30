@@ -23,7 +23,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	}
 	ft_lstlast(*lst)->next = new;
 }
-#ifdef LIBFT_MAIN_FT_LSTADD_BACK
 int	main(void)
 {
 	t_list *list = ft_lstnew("front");
@@ -34,4 +33,3 @@ int	main(void)
 		free(list);
 	return (0);
 }
-#endif

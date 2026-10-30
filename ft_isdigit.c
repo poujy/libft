@@ -20,10 +20,8 @@ int	ft_isdigit(int c)
 	}
 	return (0);
 }
-#ifdef LIBFT_MAIN_FT_ISDIGIT
 int	main(void)
 {
 	printf("ft_isdigit('7') = %d\n", ft_isdigit('7'));
 	return (0);
 }
-#endif

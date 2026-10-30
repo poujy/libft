@@ -23,7 +23,6 @@ t_list	*ft_lstnew(void *content)
 	new->next = NULL;
 	return (new);
 }
-#ifdef LIBFT_MAIN_FT_LSTNEW
 int	main(void)
 {
 	t_list *node = ft_lstnew("libft");
@@ -31,4 +30,3 @@ int	main(void)
 		free(node);
 	return (0);
 }
-#endif

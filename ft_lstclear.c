@@ -29,7 +29,6 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	}
 	*lst = NULL;
 }
-#ifdef LIBFT_MAIN_FT_LSTCLEAR
 static void	test_del(void *content)
 {
 	free(content);
@@ -42,4 +41,3 @@ int	main(void)
 		printf("ft_lstclear = %s\n", list == NULL ? "OK" : "KO");
 	return (0);
 }
-#endif

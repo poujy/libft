@@ -82,7 +82,6 @@ char	**ft_split(char const *s, char c)
 	res[i] = 0;
 	return (res);
 }
-#ifdef LIBFT_MAIN_FT_SPLIT
 int	main(void)
 {
 	char **parts = ft_split("lib ft", ' ');
@@ -92,4 +91,3 @@ int	main(void)
 		free(parts);
 	return (0);
 }
-#endif

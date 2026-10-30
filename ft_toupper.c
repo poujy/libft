@@ -18,10 +18,8 @@ int	ft_toupper(int c)
 		c -= 32;
 	return (c);
 }
-#ifdef LIBFT_MAIN_FT_TOUPPER
 int	main(void)
 {
 	printf("ft_toupper('a') = %c\n", ft_toupper('a'));
 	return (0);
 }
-#endif

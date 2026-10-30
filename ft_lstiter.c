@@ -22,7 +22,6 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
-#ifdef LIBFT_MAIN_FT_LSTITER
 static void	test_iter(void *content)
 {
 	printf("[%s]", (char *)content);
@@ -36,4 +35,3 @@ int	main(void)
 		free(list);
 	return (0);
 }
-#endif

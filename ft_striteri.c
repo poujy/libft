@@ -23,7 +23,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-#ifdef LIBFT_MAIN_FT_STRITERI
 static void	test_iteri(unsigned int index, char *c)
 {
 	(void)index;
@@ -37,4 +36,3 @@ int	main(void)
 		printf("ft_striteri = [%s]\n", text);
 	return (0);
 }
-#endif

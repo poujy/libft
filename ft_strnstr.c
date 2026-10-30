@@ -31,10 +31,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-#ifdef LIBFT_MAIN_FT_STRNSTR
 int	main(void)
 {
 	printf("ft_strnstr = %s\n", ft_strnstr("libft", "ft", 5));
 	return (0);
 }
-#endif

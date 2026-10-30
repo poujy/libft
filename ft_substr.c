@@ -66,7 +66,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 // 	free(r);
 // 	return (0);
 // }
-#ifdef LIBFT_MAIN_FT_SUBSTR
 int	main(void)
 {
 	char *result = ft_substr("libft", 1, 3);
@@ -74,4 +73,3 @@ int	main(void)
 		free(result);
 	return (0);
 }
-#endif

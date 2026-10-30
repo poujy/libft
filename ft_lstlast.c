@@ -49,7 +49,6 @@ t_list	*ft_lstlast(t_list *lst)
 // 	}
 // 	return (0);
 // }
-#ifdef LIBFT_MAIN_FT_LSTLAST
 int	main(void)
 {
 	t_list *list = ft_lstnew("libft");
@@ -57,4 +56,3 @@ int	main(void)
 		free(list);
 	return (0);
 }
-#endif

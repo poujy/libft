@@ -20,7 +20,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		((char *) dest)[n] = ((const char *) src)[n];
 	return (dest);
 }
-#ifdef LIBFT_MAIN_FT_MEMMOVE
 int	main(void)
 {
 	char buffer[7] = "abcdef";
@@ -28,4 +27,3 @@ int	main(void)
 		printf("ft_memmove = [%s]\n", buffer);
 	return (0);
 }
-#endif

@@ -20,7 +20,6 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-#ifdef LIBFT_MAIN_FT_MEMSET
 int	main(void)
 {
 	char buffer[6] = "abcde";
@@ -28,4 +27,3 @@ int	main(void)
 		printf("ft_memset = [%s]\n", buffer);
 	return (0);
 }
-#endif
