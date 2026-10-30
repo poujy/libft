@@ -36,3 +36,8 @@ int	ft_atoi(const char *nptr)
 	}
 	return ((int)(result * sign));
 }
+int	main(void)
+{
+	printf("ft_atoi = %d\n", ft_atoi("-42"));
+	return (0);
+}

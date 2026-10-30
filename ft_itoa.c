@@ -59,3 +59,10 @@ char	*ft_itoa(int n)
 	}
 	return (fill_str(str, nb, len));
 }
+int	main(void)
+{
+	char *result = ft_itoa(-42);
+		printf("ft_itoa = [%s]\n", result);
+		free(result);
+	return (0);
+}

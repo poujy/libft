@@ -23,3 +23,10 @@ t_list	*ft_lstnew(void *content)
 	new->next = NULL;
 	return (new);
 }
+int	main(void)
+{
+	t_list *node = ft_lstnew("libft");
+		printf("ft_lstnew = [%s]\n", (char *)node->content);
+		free(node);
+	return (0);
+}

@@ -30,3 +30,9 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		i++;
 	return (i);
 }
+int	main(void)
+{
+	char dst[6];
+		printf("ft_strlcpy = %zu\n", ft_strlcpy(dst, "libft", sizeof(dst)));
+	return (0);
+}

@@ -19,6 +19,18 @@ make fclean   # supprime les .o et libft.a
 make re       # fclean puis recompile
 ```
 
+Chaque fichier `ft_*.c` contient un `main` de démonstration directement
+exécutable. Pour compiler et lancer celui d'une fonction :
+
+```bash
+make test-ft_strlen
+make test-ft_split
+```
+
+Les `main` sont activés avec une macro propre à chaque fonction
+(`LIBFT_MAIN_FT_STRLEN`, etc.) afin d'éviter plusieurs définitions de `main`
+pendant la compilation normale de `libft.a`.
+
 ### Utilisation dans un projet
 
 1. Inclure le header dans le code :

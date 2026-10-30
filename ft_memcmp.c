@@ -43,3 +43,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 // 	printf("vrai ft : %d\n", memcmp(str4, str4, 2));
 // 	return (0);
 // }
+int	main(void)
+{
+	printf("ft_memcmp = %d\n", ft_memcmp("abc", "abd", 3));
+	return (0);
+}

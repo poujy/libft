@@ -21,3 +21,8 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
+int	main(void)
+{
+	printf("ft_strlen(\"libft\") = %zu\n", ft_strlen("libft"));
+	return (0);
+}

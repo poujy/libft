@@ -56,3 +56,10 @@ void	*ft_calloc(size_t nmemb, size_t size)
 // 	printf("overflow: %s\n", p ? "pointeur (KO)" : "NULL (OK)");
 // 	return (0);
 // }
+int	main(void)
+{
+	int *values = ft_calloc(3, sizeof(*values));
+		printf("ft_calloc = [%d, %d, %d]\n", values[0], values[1], values[2]);
+		free(values);
+	return (0);
+}

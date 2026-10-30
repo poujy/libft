@@ -49,3 +49,10 @@ t_list	*ft_lstlast(t_list *lst)
 // 	}
 // 	return (0);
 // }
+int	main(void)
+{
+	t_list *list = ft_lstnew("libft");
+		printf("ft_lstlast = [%s]\n", (char *)ft_lstlast(list)->content);
+		free(list);
+	return (0);
+}

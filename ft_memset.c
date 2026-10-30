@@ -20,3 +20,10 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
+int	main(void)
+{
+	char buffer[6] = "abcde";
+		ft_memset(buffer, 'x', 3);
+		printf("ft_memset = [%s]\n", buffer);
+	return (0);
+}

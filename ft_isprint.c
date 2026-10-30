@@ -18,3 +18,8 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
+int	main(void)
+{
+	printf("ft_isprint('A') = %d\n", ft_isprint('A'));
+	return (0);
+}

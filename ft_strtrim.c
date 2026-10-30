@@ -57,3 +57,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 // 	free(r);
 // 	return (0);
 // }
+int	main(void)
+{
+	char *result = ft_strtrim("--libft--", "-");
+		printf("ft_strtrim = [%s]\n", result);
+		free(result);
+	return (0);
+}

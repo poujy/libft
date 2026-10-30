@@ -33,3 +33,10 @@ char	*ft_strdup(const char *s)
 	dup[i] = '\0';
 	return (dup);
 }
+int	main(void)
+{
+	char *copy = ft_strdup("libft");
+		printf("ft_strdup = [%s]\n", copy);
+		free(copy);
+	return (0);
+}

@@ -20,3 +20,8 @@ int	ft_isdigit(int c)
 	}
 	return (0);
 }
+int	main(void)
+{
+	printf("ft_isdigit('7') = %d\n", ft_isdigit('7'));
+	return (0);
+}

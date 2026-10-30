@@ -27,3 +27,8 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *) s);
 	return (0);
 }
+int	main(void)
+{
+	printf("ft_strrchr = %s\n", ft_strrchr("libft", 'f'));
+	return (0);
+}
