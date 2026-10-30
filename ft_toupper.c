@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                       :::      ::::::::    */
-/*   ft_toupper.c                                      :+:      :+:    :+:    */
-/*                                                   +:+ +:+         +:+      */
-/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
-/*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/10/20 16:19:59 by username         #+#    #+#              */
-/*   Updated: 2026/10/20 20:57:57 by username        ###   ########.fr        */
+/*                                                        :::      ::::::::   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/20 16:19:59 by username          #+#    #+#             */
+/*   Updated: 2026/10/30 12:44:10 by jquer            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,9 @@ int	ft_toupper(int c)
 		c -= 32;
 	return (c);
 }
-int	main(void)
-{
-	printf("ft_toupper('a') = %c\n", ft_toupper('a'));
-	return (0);
-}
+
+// int	main(void)
+// {
+// 	printf("ft_toupper('a') = %c\n", ft_toupper('a'));
+// 	return (0);
+// }

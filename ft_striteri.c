@@ -6,7 +6,7 @@
 /*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/26 12:46:23 by username          #+#    #+#             */
-/*   Updated: 2026/10/26 12:51:35 by jquer            ###   ########.fr       */
+/*   Updated: 2026/10/30 12:40:24 by jquer            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,16 +23,17 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-static void	test_iteri(unsigned int index, char *c)
-{
-	(void)index;
-	*c -= 32;
-}
 
-int	main(void)
-{
-	char text[] = "abc";
-		ft_striteri(text, test_iteri);
-		printf("ft_striteri = [%s]\n", text);
-	return (0);
-}
+// static void	test_iteri(unsigned int index, char *c)
+// {
+// 	(void)index;
+// 	*c -= 32;
+// }
+
+// int	main(void)
+// {
+// 	char text[] = "abc";
+// 		ft_striteri(text, test_iteri);
+// 		printf("ft_striteri = [%s]\n", text);
+// 	return (0);
+// }

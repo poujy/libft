@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/20 16:19:45 by username          #+#    #+#             */
-/*   Updated: 2026/10/27 08:47:52 by jquer            ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_isprint.c                                      :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/20 16:19:45 by username         #+#    #+#              */
+/*   Updated: 2026/10/30 09:17:53 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,9 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-int	main(void)
-{
-	printf("ft_isprint('A') = %d\n", ft_isprint('A'));
-	return (0);
-}
+
+// int	main(void)
+// {
+// 	printf("ft_isprint('A') = %d\n", ft_isprint('A'));
+// 	return (0);
+// }

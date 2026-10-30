@@ -6,7 +6,7 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/25 18:31:20 by username         #+#    #+#              */
-/*   Updated: 2026/10/30 08:49:33 by username        ###   ########.fr        */
+/*   Updated: 2026/10/30 16:54:35 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	if (start > ft_strlen(s))
-		return (NULL);
+		len = 0;
 	if ((ft_strlen(s) - start) < len)
 		len = ft_strlen(s) - start;
 	res = malloc((len + 1) * sizeof(char));
@@ -37,39 +37,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (res);
 }
 
-// #include <stdio.h>
-
 // int	main(void)
 // {
-// 	char	*r;
+// 	char	*result = ft_substr("libft", 1, 3);
 
-// 	r = ft_substr("", 1, 1);
-// 	printf("normal    : [%s]\n", r);
-// 	free(r);
-// 	r = ft_substr("42", 0, 2);
-// 	printf("len long  : [%s]\n", r);
-// 	free(r);
-// 	r = ft_substr("bonjour", 10, 2);
-// 	printf("start>fin : [%s]\n", r);
-// 	free(r);
-// 	r = ft_substr("bonjour", 7, 2);
-// 	printf("start=fin : [%s]\n", r);
-// 	free(r);
-// 	r = ft_substr("bonjour", 0, 0);
-// 	printf("len=0     : [%s]\n", r);
-// 	free(r);
-// 	r = ft_substr("bonjour", 0, 7);
-// 	printf("tout      : [%s]\n", r);
-// 	free(r);
-// 	r = ft_substr("", 0, 5);
-// 	printf("s vide    : [%s]\n", r);
-// 	free(r);
+// 	printf("ft_substr = [%s]\n", result);
+// 	free(result);
 // 	return (0);
 // }
-int	main(void)
-{
-	char *result = ft_substr("libft", 1, 3);
-		printf("ft_substr = [%s]\n", result);
-		free(result);
-	return (0);
-}

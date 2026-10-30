@@ -6,7 +6,7 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/25 20:42:28 by username         #+#    #+#              */
-/*   Updated: 2026/10/27 11:54:16 by username        ###   ########.fr        */
+/*   Updated: 2026/10/30 12:43:12 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,39 +28,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (ft_substr(s1, d, end - d));
 }
 
-// #include <stdio.h>
-
 // int	main(void)
 // {
-// 	char	*r;
+// 	char	*result = ft_strtrim("--libft--", "-");
 
-// 	r = ft_strtrim("  hello  ", " ");
-// 	printf("normal    : [%s]\n", r);
-// 	free(r);
-// 	r = ft_strtrim("xxhixx", "x");
-// 	printf("x         : [%s]\n", r);
-// 	free(r);
-// 	r = ft_strtrim("xhxix", "x");
-// 	printf("milieu    : [%s]\n", r);
-// 	free(r);
-// 	r = ft_strtrim("abc", "");
-// 	printf("set vide  : [%s]\n", r);
-// 	free(r);
-// 	r = ft_strtrim("xxxx", "x");
-// 	printf("tout trim : [%s]\n", r);
-// 	free(r);
-// 	r = ft_strtrim("", "x");
-// 	printf("s1 vide   : [%s]\n", r);
-// 	free(r);
-// 	r = ft_strtrim(" \thi\t ", " \t");
-// 	printf("plusieurs : [%s]\n", r);
-// 	free(r);
+// 	printf("ft_strtrim = [%s]\n", result);
+// 	free(result);
 // 	return (0);
 // }
-int	main(void)
-{
-	char *result = ft_strtrim("--libft--", "-");
-		printf("ft_strtrim = [%s]\n", result);
-		free(result);
-	return (0);
-}

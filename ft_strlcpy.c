@@ -6,7 +6,7 @@
 /*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 10:04:31 by username          #+#    #+#             */
-/*   Updated: 2026/10/22 15:36:10 by jquer            ###   ########.fr       */
+/*   Updated: 2026/10/30 12:41:48 by jquer            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,11 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		i++;
 	return (i);
 }
-int	main(void)
-{
-	char dst[6];
-		printf("ft_strlcpy = %zu\n", ft_strlcpy(dst, "libft", sizeof(dst)));
-	return (0);
-}
+
+// int	main(void)
+// {
+// 	char	dst[6];
+
+// 	printf("ft_strlcpy = %zu\n", ft_strlcpy(dst, "libft", sizeof(dst)));
+// 	return (0);
+// }

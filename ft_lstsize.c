@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/27 09:29:49 by username          #+#    #+#             */
-/*   Updated: 2026/10/27 09:35:36 by jquer            ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_lstsize.c                                      :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/27 09:29:49 by username         #+#    #+#              */
+/*   Updated: 2026/10/30 09:25:23 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,12 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (len);
 }
-int	main(void)
-{
-	t_list *list = ft_lstnew("libft");
-		printf("ft_lstsize = %d\n", ft_lstsize(list));
-		free(list);
-	return (0);
-}
+
+// int	main(void)
+// {
+// 	t_list	*list = ft_lstnew("libft");
+
+// 	printf("ft_lstsize = %d\n", ft_lstsize(list));
+// 	free(list);
+// 	return (0);
+// }

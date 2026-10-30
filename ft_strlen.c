@@ -6,7 +6,7 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/20 16:21:02 by username         #+#    #+#              */
-/*   Updated: 2026/10/21 12:38:57 by username        ###   ########.fr        */
+/*   Updated: 2026/10/30 12:41:54 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,9 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
-int	main(void)
-{
-	printf("ft_strlen(\"libft\") = %zu\n", ft_strlen("libft"));
-	return (0);
-}
+
+// int	main(void)
+// {
+// 	printf("ft_strlen(\"libft\") = %zu\n", ft_strlen("libft"));
+// 	return (0);
+// }

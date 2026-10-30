@@ -6,7 +6,7 @@
 /*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 12:42:48 by username          #+#    #+#             */
-/*   Updated: 2026/10/22 14:31:43 by jquer            ###   ########.fr       */
+/*   Updated: 2026/10/30 12:42:57 by jquer            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,9 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *) s);
 	return (0);
 }
-int	main(void)
-{
-	printf("ft_strrchr = %s\n", ft_strrchr("libft", 'f'));
-	return (0);
-}
+
+// int	main(void)
+// {
+// 	printf("ft_strrchr = %s\n", ft_strrchr("libft", 'f'));
+// 	return (0);
+// }

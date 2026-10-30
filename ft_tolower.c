@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                       :::      ::::::::    */
-/*   ft_tolower.c                                      :+:      :+:    :+:    */
-/*                                                   +:+ +:+         +:+      */
-/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
-/*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/10/20 16:19:56 by username         #+#    #+#              */
-/*   Updated: 2026/10/20 20:57:54 by username        ###   ########.fr        */
+/*                                                        :::      ::::::::   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/20 16:19:56 by username          #+#    #+#             */
+/*   Updated: 2026/10/30 12:43:41 by jquer            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,9 @@ int	ft_tolower(int c)
 		c += 32;
 	return (c);
 }
-int	main(void)
-{
-	printf("ft_tolower('A') = %c\n", ft_tolower('A'));
-	return (0);
-}
+
+// int	main(void)
+// {
+// 	printf("ft_tolower('A') = %c\n", ft_tolower('A'));
+// 	return (0);
+// }

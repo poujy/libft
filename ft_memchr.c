@@ -6,7 +6,7 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/21 17:47:04 by username         #+#    #+#              */
-/*   Updated: 2026/10/25 17:48:14 by username        ###   ########.fr        */
+/*   Updated: 2026/10/30 09:25:32 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,9 @@ void	*ft_memchr(const void *ptr, int c, size_t count)
 	}
 	return (NULL);
 }
-int	main(void)
-{
-	printf("ft_memchr = %s\n", (char *)ft_memchr("libft", 'f', 5));
-	return (0);
-}
+
+// int	main(void)
+// {
+// 	printf("ft_memchr = %s\n", (char *) ft_memchr("libft", 'f', 5));
+// 	return (0);
+// }

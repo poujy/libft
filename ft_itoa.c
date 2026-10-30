@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/26 09:17:24 by username          #+#    #+#             */
-/*   Updated: 2026/10/26 11:29:22 by jquer            ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_itoa.c                                         :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/26 09:17:24 by username         #+#    #+#              */
+/*   Updated: 2026/10/30 09:18:26 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,10 +59,12 @@ char	*ft_itoa(int n)
 	}
 	return (fill_str(str, nb, len));
 }
-int	main(void)
-{
-	char *result = ft_itoa(-42);
-		printf("ft_itoa = [%s]\n", result);
-		free(result);
-	return (0);
-}
+
+// int	main(void)
+// {
+// 	char	*result = ft_itoa(-42);
+
+// 	printf("ft_itoa = [%s]\n", result);
+// 	free(result);
+// 	return (0);
+// }

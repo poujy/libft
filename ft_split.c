@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                       :::      ::::::::    */
-/*   ft_split.c                                        :+:      :+:    :+:    */
-/*                                                   +:+ +:+         +:+      */
-/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
-/*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2022/11/13 19:51:00 by username         #+#    #+#              */
-/*   Updated: 2026/10/26 09:16:39 by username        ###   ########.fr        */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/13 19:51:00 by username          #+#    #+#             */
+/*   Updated: 2026/10/30 12:40:05 by jquer            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,12 +82,12 @@ char	**ft_split(char const *s, char c)
 	res[i] = 0;
 	return (res);
 }
-int	main(void)
-{
-	char **parts = ft_split("lib ft", ' ');
-		printf("ft_split = [%s] [%s]\n", parts[0], parts[1]);
-		free(parts[0]);
-		free(parts[1]);
-		free(parts);
-	return (0);
-}
+// int	main(void)
+// {
+// 	char **parts = ft_split("lib ft", ' ');
+// 		printf("ft_split = [%s] [%s]\n", parts[0], parts[1]);
+// 		free(parts[0]);
+// 		free(parts[1]);
+// 		free(parts);
+// 	return (0);
+// }
