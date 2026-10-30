@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_lstmap.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/27 10:06:30 by username          #+#    #+#             */
-/*   Updated: 2026/10/29 11:20:41 by jquer            ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_lstmap.c                                       :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/27 10:06:30 by username         #+#    #+#              */
+/*   Updated: 2026/10/30 09:25:12 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,23 +36,25 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
-static void	*test_map_list(void *content)
-{
-	return (ft_strdup((char *)content));
-}
 
-static void	test_del(void *content)
-{
-	free(content);
-}
+// static void	*test_map_list(void *content)
+// {
+// 	return (ft_strdup((char *) content));
+// }
 
-int	main(void)
-{
-	t_list *list = ft_lstnew("libft");
-		t_list *mapped = ft_lstmap(list, test_map_list, test_del);
-		printf("ft_lstmap = [%s]\n", (char *)mapped->content);
-		free(mapped->content);
-		free(mapped);
-		free(list);
-	return (0);
-}
+// static void	test_del(void *content)
+// {
+// 	free(content);
+// }
+
+// int	main(void)
+// {
+// 	t_list	*list = ft_lstnew("libft");
+// 	t_list	*mapped = ft_lstmap(list, test_map_list, test_del);
+
+// 	printf("ft_lstmap = [%s]\n", (char *) mapped->content);
+// 	free(mapped->content);
+// 	free(mapped);
+// 	free(list);
+// 	return (0);
+// }

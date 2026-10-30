@@ -6,7 +6,7 @@
 /*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 15:39:19 by username          #+#    #+#             */
-/*   Updated: 2026/10/22 15:43:43 by jquer            ###   ########.fr       */
+/*   Updated: 2026/10/30 12:42:50 by jquer            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-int	main(void)
-{
-	printf("ft_strnstr = %s\n", ft_strnstr("libft", "ft", 5));
-	return (0);
-}
+
+// int	main(void)
+// {
+// 	printf("ft_strnstr = %s\n", ft_strnstr("libft", "ft", 5));
+// 	return (0);
+// }

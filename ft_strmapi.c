@@ -6,7 +6,7 @@
 /*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 10:14:24 by username          #+#    #+#             */
-/*   Updated: 2026/10/26 12:37:28 by jquer            ###   ########.fr       */
+/*   Updated: 2026/10/30 12:42:25 by jquer            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,16 +29,19 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	res[i] = 0;
 	return (res);
 }
-static char	test_map(unsigned int index, char c)
-{
-	(void)index;
-	return (c - 32);
-}
 
-int	main(void)
-{
-	char *result = ft_strmapi("abc", test_map);
-		printf("ft_strmapi = [%s]\n", result);
-		free(result);
-	return (0);
-}
+// static char	test_map(unsigned int index, char c)
+// {
+// 	(void) index;
+// 	(void) c;
+// 	return (c - 32);
+// }
+
+// int	main(void)
+// {
+// 	char	*result = ft_strmapi("abc", test_map);
+
+// 	printf("ft_strmapi = [%s]\n", result);
+// 	free(result);
+// 	return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/19 22:20:19 by username         #+#    #+#              */
-/*   Updated: 2026/10/27 08:47:46 by username        ###   ########.fr        */
+/*   Updated: 2026/10/30 09:17:30 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,9 @@ int	ft_isdigit(int c)
 	}
 	return (0);
 }
-int	main(void)
-{
-	printf("ft_isdigit('7') = %d\n", ft_isdigit('7'));
-	return (0);
-}
+
+// int	main(void)
+// {
+// 	printf("ft_isdigit('7') = %d\n", ft_isdigit('7'));
+// 	return (0);
+// }
